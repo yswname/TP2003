@@ -11,7 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(basePackages = "cn.com.demo.springboot.demo.mapper")
 // 扫描Service
 @ComponentScan(basePackages = {"cn.com.demo.springboot.demo.service.impl",
-                               "cn.com.demo.springboot.demo.constroller"})
+                               "cn.com.demo.springboot.demo.constroller",
+                               "cn.com.demo.springboot.demo.config"})
 // 开启注解事务
 @EnableTransactionManagement
 public class SpringbootDemoApplication {
